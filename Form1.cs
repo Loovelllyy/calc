@@ -17,12 +17,12 @@ namespace test1
             InitializeComponent();
         }
 
-       /* private int Count(int i)
-        {
-            int k = i + 1;
-            return k;
-        }
-       */
+        /* private int Count(int i)
+         {
+             int k = i + 1;
+             return k;
+         }
+        */
 
 
         int i = 0;
@@ -51,7 +51,61 @@ namespace test1
             int res = num1 + num2;
 
             result.Clear();
-            result.AppendText(res.ToString());           
+            result.AppendText(res.ToString());
+        }
+
+        private void btnDif_Click(object sender, EventArgs e)
+        {
+            if (input1.TextLength == 0 || input2.TextLength == 0)
+            {
+                MessageBox.Show("input numbers, please");
+            }
+
+            int num1 = Convert.ToInt32(input1.Text);
+            int num2 = Convert.ToInt32(input2.Text);
+            int res = num1 - num2;
+
+            result.Clear();
+            result.AppendText(res.ToString());
+        }
+
+        private void btnMult_Click(object sender, EventArgs e)
+        {
+            if (input1.TextLength == 0 || input2.TextLength == 0)
+            {
+                MessageBox.Show("input numbers, please");
+            }
+
+            int num1 = Convert.ToInt32(input1.Text);
+            int num2 = Convert.ToInt32(input2.Text);
+            int res = num1 * num2;
+
+            result.Clear();
+            result.AppendText(res.ToString());
+        }
+
+        private void btnSeg_Click(object sender, EventArgs e)
+        {
+            if (input1.TextLength == 0 || input2.TextLength == 0)
+            {
+                MessageBox.Show("input numbers, please");
+            }
+
+            double num1 = double.Parse(input1.Text);
+            double num2 = double.Parse(input2.Text);
+
+            if (num2 == 0)
+            {
+                result.Clear();
+                result.AppendText("separate by 0");
+            }
+            else
+            {
+                double res = num1 / num2;
+
+                result.Clear();
+                result.AppendText(res.ToString());
+            }
         }
     }
 }
