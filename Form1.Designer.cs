@@ -56,7 +56,7 @@ namespace test1
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(79, 187);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 17);
+            this.label1.Size = new System.Drawing.Size(70, 16);
             this.label1.TabIndex = 2;
             this.label1.Text = "input num1";
             // 
@@ -73,7 +73,7 @@ namespace test1
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(248, 187);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 17);
+            this.label2.Size = new System.Drawing.Size(70, 16);
             this.label2.TabIndex = 4;
             this.label2.Text = "input num1";
             // 
@@ -119,6 +119,7 @@ namespace test1
             this.btnDif.TabIndex = 6;
             this.btnDif.Text = "-";
             this.btnDif.UseVisualStyleBackColor = true;
+            this.btnDif.Click += new System.EventHandler(this.btnDif_Click);
             // 
             // btnMult
             // 
@@ -128,6 +129,7 @@ namespace test1
             this.btnMult.TabIndex = 7;
             this.btnMult.Text = "*";
             this.btnMult.UseVisualStyleBackColor = true;
+            this.btnMult.Click += new System.EventHandler(this.btnMult_Click);
             // 
             // btnSeg
             // 
@@ -137,6 +139,7 @@ namespace test1
             this.btnSeg.TabIndex = 8;
             this.btnSeg.Text = "/";
             this.btnSeg.UseVisualStyleBackColor = true;
+            this.btnSeg.Click += new System.EventHandler(this.btnSeg_Click);
             // 
             // groupBox1
             // 
